@@ -2,11 +2,19 @@ body {
     min-height: 100vh;
     background-color: rgb(212, 210, 210);
     color: rgb(255, 255, 255);
-    background-image: url('../Images/Extra/Funnies/CAG1.png');
+    background-image: url('../Images/Extra/Funnies/task-force-121-delta-force.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: rgba(0,0,0,0.5);
 }
 
 .głowna {
