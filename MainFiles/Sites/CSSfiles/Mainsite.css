@@ -2,12 +2,13 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url('../../Images/Extra/Funnies/CAG1.png');
+    background-image: url("../Images/Extra/Funnies/CAGVILLE2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    position: relative;
+    color: #fff;
+    font-family: Arial, sans-serif;
 }
 
 body::before {
@@ -15,32 +16,54 @@ body::before {
     position: fixed;
     inset: 0;
     z-index: -1;
-    background: rgba(0,0,0,0.45); /* overlay for transparency effect */
+    background: rgba(0,0,0,0.55);
 }
 
 .powitanie {
-    margin: 100px auto 0 auto;
-    max-width: 700px;
-    background: rgba(0,0,0,0.7);
-    padding: 48px 36px;
-    border-radius: 18px;
-    box-shadow: 0 6px 24px rgba(0,0,0,0.25);
-    color: #fff;
-    font-size: 3.2rem;
-    font-family: Arial, sans-serif;
+    margin: 80px auto 0 auto;
+    max-width: 600px;
     text-align: center;
-    backdrop-filter: blur(6px);
+    background-color: rgba(0,0,0,0.75);
+    padding: 32px 24px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(245, 255, 170, 0.18);
+    backdrop-filter: blur(3px);
 }
+
 .Wybieranie {
-    margin: 0 auto;
-    max-width: 700px;
-    background: rgba(0,0,0,0.7);
-    padding: 24px 36px;
-    border-radius: 18px;
-    box-shadow: 0 6px 24px rgba(0,0,0,0.25);
-    color: #fff;
-    font-size: 2.4rem;
-    font-family: Arial, sans-serif;
+    margin: 36px auto 0 auto;
+    max-width: 600px;
+    background-color: rgba(160, 160, 160, 0.7);
+    padding: 28px 24px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(189, 189, 188, 0.12);
     text-align: center;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(3px);
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+.Wybieranie ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Wybieranie li {
+    margin: 14px 0;
+}
+
+.Wybieranie a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.2s, text-shadow 0.2s;
+    text-shadow: 0 1px 4px #000;
+}
+
+.Wybieranie a:hover {
+    color: #fbfbf9;
+    text-shadow: 0 2px 8px #000;
 }
