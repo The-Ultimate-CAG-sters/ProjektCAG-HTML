@@ -2,7 +2,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url('Mainfiles/Images/Extra/Funnies/task-force-121-delta-force.png');
+    background-image: url('../Images/Extra/600FOB.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -31,27 +31,27 @@ body::before {
 }
 
 .Wybieranie {
-    margin: 36px auto 0 auto;
-    max-width: 600px;
+    margin: 50px auto 0 auto;
+    max-width: 800px;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 28px 24px;
-    border-radius: 14px;
-    box-shadow: 0 4px 16px rgba(255, 0, 0, 0.12);
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.12);
     text-align: center;
     backdrop-filter: blur(3px);
     border-radius: 14px;
-    box-shadow: 0 4px 16px rgba(255, 0, 0, 0.18);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.18);
     transition: background-color 0.3s, box-shadow 0.3s; 
 }
 
 .Wybieranie ul {
     list-style: none;
-    padding: 0;
+    padding: 1;
     margin: 0;
 }
 
 .Wybieranie li {
-    margin: 14px 0;
+    margin: 20px 0;
 }
 
 .Wybieranie a {
@@ -66,4 +66,14 @@ body::before {
 .Wybieranie a:hover {
     color: #ffe7e7;
     text-shadow: 0 2px 8px #000;
+}
+
+.Wybieranie a:focus,
+.Wybieranie a:active {
+    outline: none;
+    background: #ff0000;
+    color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 6px 16px 0 #ffb3b3; /* cień tylko na dole */
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }

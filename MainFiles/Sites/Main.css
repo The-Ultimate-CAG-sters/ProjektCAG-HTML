@@ -88,5 +88,4 @@ body::before {
     box-shadow: 0 4px 8px rgba(245, 255, 170, 0.2);
     backdrop-filter: blur(2px);
     color: rgb(248, 161, 161)
-    
 }
