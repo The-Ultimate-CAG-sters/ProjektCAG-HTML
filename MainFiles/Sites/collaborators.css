@@ -23,3 +23,27 @@ body::before {
     background-attachment: fixed;
     filter: blur(8px);
 }
+
+.wybór {
+    margin: 80px auto 0 auto;
+    max-width: 600px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.92); /* solid dark, no purple */
+    padding: 32px 24px;
+    border-radius: 14px;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: none;
+    color: #fff;
+    font-size: 1.4rem; /* bigger text */
+    box-shadow: 0 4px 24px 0 #000;
+}
+
+.wybór a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.wybór a:visited {
+    color: #8a0303;
+}
