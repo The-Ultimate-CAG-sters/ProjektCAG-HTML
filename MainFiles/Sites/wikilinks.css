@@ -2,7 +2,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url('../Images/Extra/Stack_of_docs.jpg');
+    background-image: url('../Images/Extra/CLASSIFEID.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -16,7 +16,13 @@ body::before {
     position: fixed;
     inset: 0;
     z-index: -1;
-    background: rgba(0,0,0,0.55);
+    background-image: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    filter: blur(20px);
+    background-color: rgba(0,0,0,0.75); /* keep your dark overlay */
 }
 
 .wiki-box {
