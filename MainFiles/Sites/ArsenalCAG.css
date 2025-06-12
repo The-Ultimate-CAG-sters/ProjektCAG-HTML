@@ -1,4 +1,120 @@
 body {
-    background-color: rgb(36, 36, 36);
-    color: rgb(255, 255, 255);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Images/Extra/armory.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #ffefef;
+    font-family: Arial, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: rgba(0,0,0,0.55);
+}
+
+.arsenal-container {
+    max-width: 1100px;
+    margin: 60px auto 40px auto;
+    padding: 32px 20px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(255, 0, 0, 0.18);
+    backdrop-filter: blur(3px);
+}
+
+.arsenal-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ff6666;
+    margin-bottom: 32px;
+    letter-spacing: 2px;
+}
+
+.arsenal-section {
+    font-size: 2rem;
+    color: #fc8f76;
+    margin: 36px 0 18px 0;
+    border-bottom: 2px solid #ff6666;
+    padding-bottom: 6px;
+    text-align: left;
+}
+
+.arsenal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.gun-box {
+    display: flex;
+    align-items: flex-start;
+    background: rgba(30, 30, 30, 0.92);
+    border-radius: 14px;
+    box-shadow: 0 2px 12px #0007;
+    padding: 24px 18px;
+    gap: 32px;
+    transition: box-shadow 0.2s, transform 0.2s;
+    backdrop-filter: blur(2px);
+}
+
+.gun-box:hover {
+    box-shadow: 0 8px 32px #ff000088;
+    transform: translateY(-4px) scale(1.02);
+}
+
+.gun-img {
+    width: 260px;
+    height: 140px;
+    object-fit: contain;
+    background: #18191c;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0005;
+    margin-right: 24px;
+}
+
+.gun-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.gun-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ff6b66;
+    margin-bottom: 10px;
+}
+
+.gun-desc {
+    font-size: 1.08rem;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.gun-prop {
+    background: #23242a;
+    color: #ff6666;
+    font-family: 'Consolas', monospace;
+    padding: 2px 7px;
+    border-radius: 6px;
+    margin-right: 4px;
+    font-size: 0.98em;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #ff6666;
 }
