@@ -1,0 +1,25 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Images/Extra/Stack_of_docs.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #ffefef;
+    font-family: Arial, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    filter: blur(8px);
+}
