@@ -11,6 +11,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
 body::before {
     content: "";
     position: fixed;
@@ -36,6 +37,7 @@ body::before {
     margin-bottom: 32px;
     letter-spacing: 2px;
 }
+
 
 .arsenal-section {
     font-size: 2rem;
