@@ -1,0 +1,116 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Images/Extra/Stack_of_docs.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #ffefef;
+    font-family: Arial, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: rgba(0,0,0,0.55);
+}
+
+.wiki-box {
+    margin: 60px auto 0 auto;
+    max-width: 700px;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 40px 32px 32px 32px;
+    border-radius: 22px;
+    box-shadow: 0 4px 32px 0 #000;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.wiki-title {
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+    color: #ff6666;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #ff0000;
+    background: rgba(255,255,255,0.08);
+    padding: 10px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #ff0000;
+    font-size: 1.1rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.back-link:hover {
+    background: #ff0000;
+    color: #fff;
+}
+
+.wiki-content {
+    font-size: 1.18rem;
+    color: #fff;
+    text-align: left;
+    margin-top: 18px;
+}
+
+.wiki-content ul {
+    margin-top: 18px;
+    margin-left: 24px;
+    color: #ff6666;
+    font-size: 1.08rem;
+}
+
+.deltaforce-box {
+    margin: 38px auto 0 auto;
+    max-width: 700px;
+    background-color: rgba(0, 0, 0, 0.92);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px 0 #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px 24px;
+    gap: 28px;
+}
+
+.deltaforce-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #ff6666;
+    background: #222;
+    flex-shrink: 0;
+}
+
+.deltaforce-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.deltaforce-title {
+    font-size: 1.5rem;
+    color: #ff6666;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.deltaforce-desc {
+    font-size: 1.08rem;
+    color: #fff;
+    line-height: 1.6;
+}
